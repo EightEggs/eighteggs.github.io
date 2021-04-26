@@ -3,29 +3,41 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Index</title>
+		<title>Welcome</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 
 	<body>
+		<div class="container_form">
+			<br>
+			<form action="https://sc.ftqq.com/SCU166852T4e96cff2dea59fdf7aa18d8f21a4bbc6605d59e8d1901.send" target="_blank" method="post">
+				<p style="color: azure;">你的昵称：</p><input name="text" type="text" />
+				<p style="color: azure;">想说的话：</p><input name="desp" type="text" />
+				<br><br>
+				<input style="color: black;" type="submit" value="发送"/>
+			</form>
+			
+		</div>
+		
 		<div class="container right-panel-active">
 			<div class="container_form container--signup">
 				<form class="form" id="form1" action="">
 					<h2 class="form_title">REGISTRATION</h2>
-					<input type="text" placeholder="Username" class="input" />
-					<input type="email" placeholder="E-mail" class="input" />
-					<input type="password" placeholder="Password" class="input" />
-					<button class="btn">register</button>
+					<input id="runame" type="text" placeholder="Username" class="input" />
+					<input id="remail" type="email" placeholder="E-mail" class="input" />
+					<input id="rpwd" type="password" placeholder="Password" class="input" />
+					<button class="btn" onclick="f_reg()">register</button>
 				</form>
 			</div>
 
 			<div class="container_form container--signin">
 				<form class="form" id="form2" action="">
 					<h2 class="form_title">WELCOME</h2>
-					<input type="email" placeholder="E-mail" class="input" />
-					<input type="password" placeholder="Password" class="input" />
-					<a href="https://tools.kalvinbg.cn/txt/bullshitGenerator?%E4%B8%BB%E9%A2%98=%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E&%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B=%E6%96%87%E5%8C%96%E7%89%88&%E9%9A%8F%E6%9C%BA%E7%A7%8D%E5%AD%90=1402612129" class="link">Forgot the password?</a>
-					<button class="btn">login</button>
+					<input id="lemail" type="email" placeholder="E-mail" class="input" />
+					<input id="lpwd" type="password" placeholder="Password" class="input" />
+					<a href="https://tools.kalvinbg.cn/txt/bullshitGenerator?%E4%B8%BB%E9%A2%98=%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E&%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B=%E6%96%87%E5%8C%96%E7%89%88&%E9%9A%8F%E6%9C%BA%E7%A7%8D%E5%AD%90=1402612129"
+						target="_blank" class="link">Forgot the password?</a>
+					<button class="btn" onclick="f_login()">login</button>
 				</form>
 			</div>
 
@@ -41,5 +53,5 @@
 			</div>
 		</div>
 	</body>
-	<script src="js/script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </html>
